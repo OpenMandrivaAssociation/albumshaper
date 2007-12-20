@@ -9,6 +9,7 @@ Source: http://prdownloads.sourceforge.net/albumshaper/%{name}_%{version}.tar.bz
 Patch: albumshaper-2.1-no-upx.patch
 Patch1: albumshaper-2.1-gcc4.1.patch
 Summary: Graphical application used to create, maintain, and share photo albums
+BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: libxslt-devel doxygen
 BuildRequires: qt3-devel
 #upx
