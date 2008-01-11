@@ -56,16 +56,6 @@ install -m 755 bin/AlbumShaper %buildroot%_bindir/AlbumShaper
 find %buildroot -name .DS_Store -exec rm {} \;
 find %buildroot%_datadir -type f -exec chmod 644 {} \;
 
-install -d -m 755 $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): \
-	command="%{_bindir}/AlbumShaper" \
-	needs="X11" \
-	section="Multimedia/Graphics" \
-	icon="%name.png" \
-	title="AlbumShaper" \
-	longtitle="Create photo albums" xdg="true"
-EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -97,7 +87,6 @@ rm -rf $RPM_BUILD_ROOT/
 %doc docs/html docs/bugs.txt docs/copying.txt *.txt
 %_bindir/*
 %_datadir/%name
-%_menudir/%name
 %_datadir/applications/mandriva*
 %_liconsdir/%name.png
 %_iconsdir/%name.png
