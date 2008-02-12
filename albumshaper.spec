@@ -16,7 +16,6 @@ BuildRequires: qt3-devel
 BuildRequires: ImageMagick
 
 %description
-
 Album Shaper is a graphical application used to create, maintain, and
 share photo albums using open formats like HTML, XSLT, and JPG.
 Two-layer albums can be created in a drag-n-drop interface which
