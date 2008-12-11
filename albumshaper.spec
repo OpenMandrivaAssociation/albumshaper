@@ -13,7 +13,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: libxslt-devel doxygen
 BuildRequires: qt3-devel
 #upx
-BuildRequires: ImageMagick
+BuildRequires: imagemagick
 
 %description
 Album Shaper is a graphical application used to create, maintain, and
