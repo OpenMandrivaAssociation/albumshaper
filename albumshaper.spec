@@ -1,6 +1,6 @@
 Name: albumshaper
 Version: 2.1
-Release: %mkrel 7
+Release: %mkrel 8
 License: GPL
 Url: http://albumshaper.sf.net
 Group: Graphics
