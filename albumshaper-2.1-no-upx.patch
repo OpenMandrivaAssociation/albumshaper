@@ -1,0 +1,20 @@
+--- albumshaper_2.1_src/AlbumShaper.pro~	2005-04-11 18:11:29.322036405 +0200
++++ albumshaper_2.1_src/AlbumShaper.pro	2005-04-11 18:24:23.589451443 +0200
+@@ -40,7 +40,7 @@
+ #CONFIG += manualPaths
+ 
+ #Comment this out if you don't want to UPX compress the binary
+-!mac:unix:CONFIG += useUpxCompression
++#!mac:unix:CONFIG += useUpxCompression
+ 
+ #Comment this in if you want to link statically
+ #CONFIG += static
+@@ -272,7 +272,7 @@
+ 
+ #--------- Launcher Script (Linux/FreeBSD) ------------
+ !mac:unix:scripts.path = $${BIN_DIR}
+-!mac:unix:scripts.commands = cp -f bin/AlbumShaper $${BIN_DIR}/AlbumShaper;
++#!mac:unix:scripts.commands = cp -f bin/AlbumShaper $${INSTALL_ROOT}$${BIN_DIR}/AlbumShaper;
+ 
+ 
+ #===========================================================================================
