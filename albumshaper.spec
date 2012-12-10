@@ -96,3 +96,70 @@ rm -rf $RPM_BUILD_ROOT/
 %_miconsdir/%name.png
 
 
+
+
+%changelog
+* Tue Dec 06 2011 GÃ¶tz Waschk <waschk@mandriva.org> 2.1-9mdv2012.0
++ Revision: 738095
+- yearly rebuild
+
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 2.1-8mdv2011.0
++ Revision: 609963
+- rebuild
+
+* Thu Jan 14 2010 Funda Wang <fwang@mandriva.org> 2.1-7mdv2010.1
++ Revision: 491116
+- rebuild for libjpeg v8
+
+* Sun Aug 23 2009 Funda Wang <fwang@mandriva.org> 2.1-6mdv2010.0
++ Revision: 419743
+- rebuild for libjpeg v7
+
+* Thu Dec 11 2008 Oden Eriksson <oeriksson@mandriva.com> 2.1-5mdv2010.0
++ Revision: 312987
+- lowercase ImageMagick
+
+* Thu Jun 12 2008 Pixel <pixel@mandriva.com> 2.1-5mdv2009.0
++ Revision: 218437
+- rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - fix spacing at top of description
+    - drop old menu
+
+* Thu Dec 20 2007 Olivier Blin <blino@mandriva.org> 2.1-5mdv2008.1
++ Revision: 135819
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+
+* Wed Jan 24 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.1-5mdv2007.0
++ Revision: 112779
+- Import albumshaper
+
+* Wed Jan 24 2007 Götz Waschk <waschk@mandriva.org> 2.1-5mdv2007.1
+- unpack patches
+
+* Fri Aug 25 2006 Götz Waschk <waschk@mandriva.org> 2.1-4mdv2007.0
+- xdg menu
+
+* Fri Aug 25 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.1-1mdv2007.0
+- Rebuild
+
+* Fri Jun 02 2006 Götz Waschk <waschk@mandriva.org> 2.1-3mdv2007.0
+- patch1: fix build
+
+* Thu Apr 13 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.1-2mdk
+- Rebuild
+- use mkrel
+
+* Tue Apr 12 2005 Götz Waschk <waschk@linux-mandrake.com> 2.1-1mdk
+- update the patch
+- New release 2.1
+
+* Wed Mar 16 2005 Götz Waschk <waschk@linux-mandrake.com> 2.0-1mdk
+- initial package
+
