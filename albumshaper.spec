@@ -10,11 +10,12 @@ Group:		Graphics
 Url:		http://albumshaper.sf.net
 Source0:	http://prdownloads.sourceforge.net/albumshaper/%{name}_%{version}.tar.bz2
 #gw disable upx, find-requires is broken
-Patch:		albumshaper-2.1-no-upx.patch
+Patch0:		albumshaper-2.1-no-upx.patch
 Patch1:		albumshaper-2.1-gcc4.1.patch
+Patch2:		albumshaper-2.1-qt4.patch
 BuildRequires:	doxygen
 BuildRequires:	imagemagick
-BuildRequires:	qt3-devel
+BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(libxslt)
 
 %description
@@ -49,13 +50,14 @@ Albums in the most effecient and easy way possible.
 %setup -q -n %{name}_%{version}_src
 %patch -p1
 %patch1 -p1
+%patch2 -p1
 for file in AlbumShaper.pro AlbumShaper.xcode/project.pbxproj src/main.cpp
 do
   sed -i -e 's|/local||g' $file
 done
 
 %build
-%qmake_qt3
+%qmake_qt4
 %make
 doxygen AlbumShaper.doc
 
