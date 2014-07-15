@@ -1,10 +1,9 @@
-%define _enable_debug_packages %{nil}
 %define debug_package %{nil}
 
 Summary:	Graphical application used to create, maintain, and share photo albums
 Name:		albumshaper
 Version:	2.1
-Release:	10
+Release:	11
 License:	GPLv2+
 Group:		Graphics
 Url:		http://albumshaper.sf.net
@@ -72,7 +71,9 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
 [Desktop Entry]
 Name=AlbumShaper
+Name[ru]=AlbumShaper
 Comment=Create photo albums
+Comment[ru]=Создание фотоальбомов
 Exec=%{_bindir}/AlbumShaper
 Icon=%{name}
 Terminal=false
