@@ -14,6 +14,7 @@ Patch1:		albumshaper-2.1-gcc4.1.patch
 Patch2:		albumshaper-2.1-qt4.patch
 BuildRequires:	doxygen
 BuildRequires:	imagemagick
+BuildRequires:	jpeg-devel
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(libxslt)
 
