@@ -3,7 +3,7 @@
 Summary:	Graphical application used to create, maintain, and share photo albums
 Name:		albumshaper
 Version:	2.1
-Release:	11
+Release:	12
 License:	GPLv2+
 Group:		Graphics
 Url:		http://albumshaper.sf.net
