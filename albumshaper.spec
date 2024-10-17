@@ -6,7 +6,7 @@ Version:	2.1
 Release:	12
 License:	GPLv2+
 Group:		Graphics
-Url:		http://albumshaper.sf.net
+Url:		https://albumshaper.sf.net
 Source0:	http://prdownloads.sourceforge.net/albumshaper/%{name}_%{version}.tar.bz2
 #gw disable upx, find-requires is broken
 Patch0:		albumshaper-2.1-no-upx.patch
